@@ -1,0 +1,2 @@
+1. Create one DB on accessible server by executing script file
+2. Update appsetting.json file (connectionstring)

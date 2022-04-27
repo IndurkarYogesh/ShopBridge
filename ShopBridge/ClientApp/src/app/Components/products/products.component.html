@@ -1,0 +1,19 @@
+<h1>Products</h1>
+
+<table class="table table-striped" *ngIf="products">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>
+                <button class="btn btn-default btn-sm" (click)="showProduct(product.id)">Show</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

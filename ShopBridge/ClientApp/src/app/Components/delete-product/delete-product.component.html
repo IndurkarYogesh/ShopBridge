@@ -1,0 +1,14 @@
+<div class="product-details">
+    <div class="card" *ngIf="product">
+        <div class="card-body">
+            <h5 class="card-title">Name : {{product.name}}</h5>
+            <p>
+                Description : {{product.description}}
+            </p>
+            <h3 class="card-title">Price : {{product.price}}</h3>
+            <h3 class="card-title">Category : {{product.category}}</h3>
+            <a [routerLink]="['/products']" class="card-link">Back</a>
+            <a (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</div>

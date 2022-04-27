@@ -1,0 +1,26 @@
+<div class="update-product">
+    <form [formGroup]="updateProductForm" (ngSubmit)="onSubmit()">
+        <!-- <div class="form-group">
+            <label for="id" class="required">ID</label>
+            <input type="text" class="form-control" id="id" placeholder="product name" formControlName="id" />
+        </div> -->
+        <div class="form-group">
+            <label for="name" class="required">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="product name" formControlName="name" />
+        </div>
+        <div class="form-group">
+            <label for="description" class="required">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="product description" formControlName="description" />
+        </div>
+        <div class="form-group">
+            <label for="price" class="required">Price</label>
+            <input type="number" class="form-control" id="price" placeholder="product price" formControlName="price" />
+        </div>
+        <div class="form-group">
+            <label for="category" class="required">Category</label>
+            <input type="text" class="form-control" id="price" placeholder="product price" formControlName="category" readonly />
+        </div>
+        <button class="btn btn-success">Update</button>
+        <button class="btn btn-default" [routerLink]="['/products']">Cancel</button>
+    </form>
+    </div>  
